@@ -1,18 +1,13 @@
 package com.ashok.decode.arUco
 
-import android.content.Context
-import android.os.Build
 import android.os.Bundle
-import android.os.VibrationEffect
-import android.os.Vibrator
-import android.os.VibratorManager
-import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import com.ashok.decode.arUco.myui.MainScreen
 import com.ashok.decode.arUco.ui.theme.DecodeArUcoTheme
+import com.ashok.decode.arUco.viewmodel.MainViewModel
 import com.journeyapps.barcodescanner.ScanContract
 
 class MainActivity : ComponentActivity() {

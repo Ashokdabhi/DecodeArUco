@@ -1,4 +1,4 @@
-package com.ashok.decode.arUco
+package com.ashok.decode.arUco.viewmodel
 
 import android.app.Application
 import android.content.Context
@@ -15,7 +15,7 @@ import com.journeyapps.barcodescanner.ScanOptions
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 
-class MainViewModel(private val app: Application) : AndroidViewModel(app) {
+class MainViewModel (private val app: Application) : AndroidViewModel(app) {
     private val _scanResult = MutableStateFlow("")
     val scanResult: StateFlow<String> = _scanResult
 
